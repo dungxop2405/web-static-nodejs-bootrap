@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CloudMqtt</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <h1>Hello, world!</h1>
+      <p>Resize this responsive page to see the effect!</p>      
+      <!-- 
+      Button trigger modal(way 1) 
+      <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModalConnect" id="ChangeInfor">Change Information</button>
+      -->
+      <!-- Button trigger modal(way 2) -->
+      <button type="button" class="btn btn-info" data-toggle="modal" id="ChangeInfor" >Change Information</button>
+      <!-- Modal -->
+      <div class="modal fade" id="myModalConnect" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Change Information</h4>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="inputserver">Server</label>
+                <input class="form-control" id="inputserver" type="text">
+              </div>
+              <div class="form-group">
+                <label for="inputuser">User</label>
+                <input class="form-control" id="inputuser" type="text">
+              </div>
+              <div class="form-group">
+                <label for="inputpassword">Password</label>
+                <input class="form-control" id="inputpassword" type="text">
+              </div>
+              <div class="form-group">
+                <label for="inputport">Websockets Port (TLS only)</label>
+                <input class="form-control" id="inputport" type="text">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" id="SaveChanges">Save Changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal -->
+      <button type="button" class="btn btn-danger" id="DisConnect">DisConnect</button> 
+    </div>
+
+    <div class="container">
+    
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- index.js Using jQuery -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
